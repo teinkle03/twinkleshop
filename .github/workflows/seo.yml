@@ -1,0 +1,27 @@
+name: Update SEO files
+on:
+  schedule:
+    - cron: '0 */6 * * *'      # প্রতি ৬ ঘণ্টায় নতুন পণ্য ধরে sitemap আপডেট
+  workflow_dispatch:            # Actions ট্যাব থেকে হাতে চালানো যাবে
+  push:
+    branches: [main]
+    paths: [index.html, generate-seo.mjs]
+permissions:
+  contents: write
+jobs:
+  seo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: node generate-seo.mjs
+        env:
+          SITE_URL: https://twinkleonline.shop/
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add sitemap.xml robots.txt
+          git diff --cached --quiet || (git commit -m "Update SEO files" && git push)
