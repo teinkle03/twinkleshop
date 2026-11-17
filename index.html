@@ -3,33 +3,35 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Twinkle.Shop</title>
-<meta name="description" content="Twinkle.Shop — অনলাইন শপ। সারা বাংলাদেশে হোম ডেলিভারি।">
+<title>Twinkle Online Shop | Twinkleonline.Shop</title>
+<meta name="description" content="Twinkle Online Shop (Twinkleonline.Shop) — বাংলাদেশের অনলাইন শপ। সারা বাংলাদেশে হোম ডেলিভারি।">
 <meta name="keywords" content="Twinkle.Shop, Twinkle Shop, অনলাইন শপ বাংলাদেশ">
 <meta name="robots" content="index, follow">
 
 <meta property="og:type" content="website">
 <link rel="canonical" href="https://twinkleonline.shop/">
-<meta property="og:site_name" content="Twinkle.Shop">
+<link rel="icon" type="image/png" sizes="192x192" href="https://twinkleonline.shop/favicon.png">
+<link rel="apple-touch-icon" href="https://twinkleonline.shop/favicon.png">
+<meta property="og:site_name" content="Twinkleonline.Shop">
 <meta property="og:url" content="https://twinkleonline.shop/">
 <meta property="og:image" content="https://twinkleonline.shop/logo.png">
-<meta property="og:title" content="Twinkle.Shop">
-<meta property="og:description" content="Twinkle.Shop — অনলাইন শপ। সারা বাংলাদেশে হোম ডেলিভারি।">
+<meta property="og:title" content="Twinkleonline.Shop">
+<meta property="og:description" content="Twinkle Online Shop (Twinkleonline.Shop) — বাংলাদেশের অনলাইন শপ। সারা বাংলাদেশে হোম ডেলিভারি।">
 
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Twinkle.Shop">
-<meta name="twitter:description" content="Twinkle.Shop — অনলাইন শপ। সারা বাংলাদেশে হোম ডেলিভারি।">
+<meta name="twitter:title" content="Twinkleonline.Shop">
+<meta name="twitter:description" content="Twinkle Online Shop (Twinkleonline.Shop) — বাংলাদেশের অনলাইন শপ। সারা বাংলাদেশে হোম ডেলিভারি।">
 <meta name="twitter:image" content="https://twinkleonline.shop/logo.png">
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "OnlineStore",
-  "name": "Twinkle.Shop",
-  "alternateName": ["Twinkle Shop"],
+  "name": "Twinkleonline.Shop",
+  "alternateName": ["Twinkle Online Shop", "Twinkle Online", "Twinkle Shop"],
   "url": "https://twinkleonline.shop/",
   "logo": "https://twinkleonline.shop/logo.png",
-  "description": "Twinkle.Shop — অনলাইন শপ। সারা বাংলাদেশে হোম ডেলিভারি।",
+  "description": "Twinkle Online Shop (Twinkleonline.Shop) — বাংলাদেশের অনলাইন শপ। সারা বাংলাদেশে হোম ডেলিভারি।",
   "areaServed": "BD"
 }
 </script>
@@ -455,6 +457,7 @@
 
   /* ===== ফুটার (ডার্ক, ৪ কলাম) ===== */
   #aboutSection { display:none !important; }
+  .sr-only { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; }
   .site-foot .social-row { margin-top:6px; gap:8px; }
   .site-foot .social-row a { width:30px; height:30px; border-radius:8px; font-size:15px; }
   footer.site-foot { background:#1a1a2e; color:rgba(255,255,255,0.8); padding:18px 20px 16px; text-align:left; font-size:12px; }
@@ -552,6 +555,7 @@
   </aside>
 
   <section class="content">
+    <h1 class="sr-only">Twinkle Online Shop — অনলাইন শপ বাংলাদেশ</h1>
     <div class="banner-wrap" id="bannerSection">
       <div class="banner" id="bannerWrap">
         <div class="banner-track" id="bannerTrack"></div>
@@ -605,9 +609,9 @@
     <div class="foot-grid">
       <div class="foot-col">
         <h4>Twinkle.Shop</h4>
-        <span class="fl">📍 <span id="footAddress">ঢাকা, বাংলাদেশ</span></span>
-        <span class="fl">✉️ <span id="footEmail">info@twinkleshop.com</span></span>
-        <span class="fl">📞 <span id="footPhone">01700-000000</span></span>
+        <span class="fl" id="footAddrRow" style="display:none;">📍 <span id="footAddress"></span></span>
+        <span class="fl">✉️ <span id="footEmail">twinkleonlineshop0@gmail.com</span></span>
+        <span class="fl">📞 <span id="footPhone">01864115856</span></span>
         <div class="social-row" id="socialRow"></div>
       </div>
       <div class="foot-col">
@@ -1233,7 +1237,7 @@
       page.style.display = 'none';
       list.style.display = '';
       banner.style.display = '';
-      document.title = 'Twinkle.Shop';
+      document.title = 'Twinkle Online Shop | Twinkleonline.Shop';
       lastShownId = null;
       if (wasProduct) window.scrollTo(0, listScrollY);
       return;
@@ -1278,7 +1282,7 @@
       if (needSize(p) && !selectedSize) { sizeWarn(); return; }
       addToCart(p.id, p.name, priceOf(p), detailImages[0], p.boroCount || 0, p.chotoCount || 0, p.isMirror ? 1 : 0, selectedSize);
     };
-    document.title = p.name + ' | Twinkle.Shop';
+    document.title = p.name + ' | Twinkleonline.Shop';
   }
 
   function renderDetailImage() {
@@ -1816,7 +1820,7 @@
   }
 
 // ===== ফুটার ও তথ্য পপআপ (/FOOT-START) =====
-const FOOT = { shopName: 'Twinkle.Shop', address: 'ঢাকা, বাংলাদেশ', email: 'info@twinkleshop.com', phone: '01700-000000', fb: '' };
+const FOOT = { shopName: 'Twinkle.Shop', address: '', email: 'twinkleonlineshop0@gmail.com', phone: '01864115856', fb: '' };
 function fEsc(t) { return String(t == null ? '' : t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;'); }
 function fBn(n) { return Number(n).toLocaleString('bn-BD'); }
 function fBox(inner, bg) { return '<div style="padding:12px 14px;background:' + (bg || 'var(--bg)') + ';border-radius:12px;font-size:13.5px;line-height:1.8;margin-top:10px;">' + inner + '</div>'; }
@@ -1876,14 +1880,14 @@ function openInfoModal(key) {
     const at = (document.getElementById('aboutText') || {}).textContent || '';
     body = '<div style="text-align:center;padding:12px 0 4px;"><div style="font-size:46px;">🛍️</div><div style="font-size:23px;font-weight:700;color:var(--primary);">' + FOOT.shopName + '</div><div style="font-size:13px;margin-top:4px;">বাংলাদেশের বিশ্বস্ত অনলাইন শপ</div></div>' +
       '<p style="margin-top:12px;white-space:pre-line;">' + (at.trim() ? fEsc(at.trim()) : 'আমরা বিশ্বাস করি প্রতিটি গ্রাহক সেরা মানের পণ্য সেরা দামে পাওয়ার যোগ্য।') + '</p>' +
-      fBox('📍 ' + ad + '<br>✉️ ' + em + '<br>📞 ' + ph, 'var(--primary-light)');
+      fBox((ad ? '📍 ' + ad + '<br>' : '') + '✉️ ' + em + '<br>📞 ' + ph, 'var(--primary-light)');
   } else if (key === 'contact') {
     title = '📞 যোগাযোগ করুন';
     body = fLink('tel:' + String(FOOT.phone).replace(/[^0-9]/g, ''), '📞', 'ফোন করুন', ph, 'var(--primary-light)') +
       fLink('mailto:' + em, '✉️', 'ইমেইল করুন', em, '#f0f9ff') +
       fLink('https://wa.me/' + waNum, '💬', 'WhatsApp', ph, '#f0fdf4') +
       (FOOT.fb ? fLink(fEsc(FOOT.fb), '👍', 'Facebook', 'আমাদের পেজ', '#eff4ff') : '') +
-      fBox('📍 <b>আমাদের ঠিকানা</b><br>' + ad);
+      (ad ? fBox('📍 <b>আমাদের ঠিকানা</b><br>' + ad) : '');
   } else { return; }
   document.getElementById('infoModalTitle').textContent = title;
   document.getElementById('infoModalBody').innerHTML = body;
@@ -1892,12 +1896,13 @@ function openInfoModal(key) {
 function closeInfoModal() { document.getElementById('infoModalBg').style.display = 'none'; }
 
 (function footInit() {
+  if (FOOT.address) { document.getElementById('footAddress').textContent = FOOT.address; document.getElementById('footAddrRow').style.display = ''; }
   const y = new Date().getFullYear().toLocaleString('bn-BD', { useGrouping: false });
   document.getElementById('footCopy').textContent = '© ' + y + ' ' + FOOT.shopName + ' — সর্বস্বত্ব সংরক্ষিত';
   // WhatsApp নম্বর অ্যাডমিন থেকে দেওয়া থাকলে ফুটারের ফোন হিসেবে সেটাই দেখাবে
   db.collection('settings').doc('contact').onSnapshot(doc => {
     const d = doc.exists ? doc.data() : {};
-    FOOT.phone = d.whatsapp ? String(d.whatsapp).replace(/[^0-9]/g, '').replace(/^88/, '') : '01700-000000';
+    FOOT.phone = d.whatsapp ? String(d.whatsapp).replace(/[^0-9]/g, '').replace(/^88/, '') : '01864115856';
     FOOT.fb = d.facebook || '';
     document.getElementById('footPhone').textContent = FOOT.phone;
   });
